@@ -1,0 +1,27 @@
+.tz-gallery-fluid {
+    padding: 0px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery-fluid .row > div {
+    padding: 0px;
+}
+
+.tz-gallery-fluid .lightbox-fluid img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    min-height: 210px;
+     transition: 0.2s ease-in-out;
+}
+
+.tz-gallery-fluid .lightbox-fluid:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    transition: 0.2s ease-in-out;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}

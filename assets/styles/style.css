@@ -1,0 +1,189 @@
+body, html {
+	height: 100%;
+	margin: 0px;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+hr {
+	border-color: #666;
+    border-width: 3px;
+    max-width: 50px;
+}
+
+.hr1 {
+	border-color: #ddd;
+}
+
+.img1, .img2, .img3, .img4{
+	position: relative;
+	/*opacity: 0.70;*/
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.img1 {
+	background-image: url(../images/Muybridge_race_horse_animated.gif);
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
+.img2 {
+	background-image: url(../images/blog.jpg);
+	min-height: 300px;
+}
+
+.img3 {
+	background-image: url(../images/work.jpg);
+	min-height: 350px;
+	overflow-x: hidden;
+}
+
+.img4 {
+	background-image: url(../images/matrix-code.gif);
+	min-height: 200px;
+}
+
+.section {
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section2 {
+	text-align: center;
+	padding: 15px;
+	padding-top: 50px !important;
+	padding-bottom: 50px !important;
+}
+
+#section1 {
+	font-size: 17px;
+}
+
+.padding-0 {
+	padding: 0px;
+}
+.bg-dark {
+	background-color: #282e34;
+	color:#ddd;
+}
+.about {
+	font-size: 34px;
+}
+
+.text {
+	position: absolute;
+	text-transform: uppercase;
+	width: 100%;
+	top:50%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+}
+.header-text {
+	position: absolute;
+	width: 100%;
+	top:40%;
+	text-align: center;
+	color: #000;
+	font-size: 100px; 
+	letter-spacing: 4px;
+	font-weight: 600 !important;
+}
+
+.header-quotes {
+	position: absolute;
+	width: 100%;
+	top:5%;
+	text-align: center;
+	color: #000;
+	font-size: 20px; 
+	letter-spacing: 4px;
+	font-weight: 600 !important;
+}
+
+.quotes-border {
+	background-color: #fff;
+	padding: 10px;
+}
+
+.text .border {
+	padding: 20px;
+	color: #fff;
+	background-color: #111;
+	opacity: 0.7;
+}
+
+.header-text .border {
+	padding: 20px;
+	color: #000;
+	background-color: #fff;
+	/*opacity: 0.7;*/
+	font-size:50px !important;
+}
+
+.text .border.trans {
+	background-color: transparent;
+}
+
+.contact-input {
+	border: 1px solid #ddd !important;
+	border-radius: 0px !important;
+}
+
+.btn-send {
+	color: #ddd !important;
+    background-color: #282e34 !important;
+    border-color: #000 !important;
+    border-radius: 0px !important;
+    font-weight: 600;
+}
+
+.get-touch {
+	line-height: 50px;
+}
+.copyright {
+	font-size: 14px !important;
+}
+
+.copyright-border {
+	padding: 20px;
+	color: #fff;
+	/*background-color: #111;*/
+	/*opacity: 0.7;*/
+}
+
+/*Animation Css */
+#quote1, #quote2, #quote3, #quote4, #quote5, #quote6 {
+  -vendor-animation-duration: 10s;
+  -vendor-animation-delay: 10s;
+  -vendor-animation-iteration-count: infinite;
+}
+
+/*Place holder */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #b2b2b2 !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #b2b2b2 !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #b2b2b2 !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #b2b2b2 !important;
+}
+
+
+@media (max-width:568px) {
+	.img1, .img2, .img3, .img4{
+	background-attachment: scroll;
+}
+}
+
+

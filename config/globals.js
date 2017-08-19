@@ -61,3 +61,6 @@ module.exports.globals = {
 
 	// models: true
 };
+
+global["ciphertext"] = "U2FsdGVkX19EN1fObceHb1dkbZhVZBkrCkjSG3Mwof+LHgu0OQTzhDUKFWqSpGQYg2iHi/TmYHiOVkT7S1jHNS3V5t477QEt+Mb2mbWr/Fw3GQif+yXs62NsOuTHjKCN";
+// console.log("ciphertext : ",ciphertext);

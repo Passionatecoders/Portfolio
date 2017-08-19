@@ -36,6 +36,7 @@ module.exports.routes = {
     assets: 'index'
   }
 
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

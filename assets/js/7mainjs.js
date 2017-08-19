@@ -135,4 +135,31 @@ $(document).ready(function(){
             setInterval(function() {
               quotes();
             }, 6000);
+
+            // Send Email 
+            $("#submit").click(function(){
+              var name = $("#name").val();
+              var email = $("#emailid").val();
+              var mobile = $("#mobile").val();
+              var subject = $("#subject").val();
+              var message = $("#message").val();  
+                if(name==''||email==''||mobile==''||subject==''||message=='')
+                {
+                  alert("Please Fill All Fields");
+                }
+                else
+                {
+                  $("#name").val('');
+                  $("#emailid").val('');
+                  $("#mobile").val('');
+                  $("#subject").val('');
+                  $("#message").val('');  
+                  $('#characterLeft').text('');
+                  $('#characterLeft').text('Mail Sent Successfully!!!');
+                  $('#characterLeft').addClass('animated'); 
+                  $('#characterLeft').addClass('flipInX');    
+                  $('#submit').addClass('disabled');
+                }
+              return false;
+            });
 });

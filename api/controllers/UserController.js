@@ -13,7 +13,7 @@ module.exports = {
 	 		req.body.to = "parmarpriyank94@gmail.com"
 	 	}
 	 	if(_.isEmpty(req.body.subject)){
-	 		req.body.subject = "Passion Code : Contact Us form details";
+	 		req.body.subject = "Portfolio : Contact Us form details";
 	 	}
 
 		var bytes  = CryptoJS.AES.decrypt(ciphertext, '2');

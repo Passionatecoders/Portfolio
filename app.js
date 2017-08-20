@@ -53,7 +53,7 @@ process.chdir(__dirname);
     }
   }
 
-  sails.log.info("Node Port : ",process);
+  // sails.log.info("Node Port : ",process);
   // Start server
   sails.lift(rc('sails'));
 })();

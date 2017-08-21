@@ -18,6 +18,9 @@ hr {
 	border-color: #ddd;
 }
 
+.br-50 {
+	padding-top: 50px !important
+}
 .img1, .img2, .img3, .img4{
 	position: relative;
 	/*opacity: 0.70;*/
@@ -182,8 +185,27 @@ hr {
 
 @media (max-width:568px) {
 	.img1, .img2, .img3, .img4{
-	background-attachment: scroll;
-}
+		background-attachment: scroll;
+	}
+
+	.section {
+		text-align: center;
+		padding: 50px 25px;
+	}
+
+	.main-carousel {
+		top:-3% !important;
+		left:2% !important;	
+	}
+
+	.header-text .border {
+    	padding: 20px !important;
+    	font-size: 25px !important;
+	}
+
+	.br-50 {
+    	padding-top: 0px !important;
+	}
 }
 
 

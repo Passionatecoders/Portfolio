@@ -149,9 +149,11 @@ $(document).ready(function(){
                 // }
                 // else
                 // {
+                  var local = 'http://localhost:1337/user/emailTo';
+                  var server = 'http://priyankparmar.com:80/user/emailTo';
                     $.ajax({
                      type: 'POST',
-                     url: 'http://localhost:1337/user/emailTo',
+                     url: server,
                      data: { 
                       name:name, 
                       email:email, 

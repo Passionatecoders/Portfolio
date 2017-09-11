@@ -143,23 +143,52 @@ $(document).ready(function(){
               var mobile = $("#mobile").val();
               var subject = $("#subject").val();
               var message = $("#message").val();  
-                if(name==''||email==''||mobile==''||subject==''||message=='')
-                {
-                  alert("Please Fill All Fields");
-                }
-                else
-                {
-                  $("#name").val('');
-                  $("#emailid").val('');
-                  $("#mobile").val('');
-                  $("#subject").val('');
-                  $("#message").val('');  
-                  $('#characterLeft').text('');
-                  $('#characterLeft').text('Mail Sent Successfully!!!');
-                  $('#characterLeft').addClass('animated'); 
-                  $('#characterLeft').addClass('flipInX');    
-                  $('#submit').addClass('disabled');
-                }
-              return false;
+                // if(name==''||email==''||mobile==''||subject==''||message=='')
+                // {
+                //   alert("Please Fill All Fields");
+                // }
+                // else
+                // {
+                    $.ajax({
+                     type: 'POST',
+                     url: 'http://localhost:1337/user/emailTo',
+                     data: { 
+                      name:name, 
+                      email:email, 
+                      mobile:mobile, 
+                      subject:subject, 
+                      message:message 
+                    },
+                     beforeSend: function()
+                     {
+                         console.log('Fetching....');
+                     },
+                     success: function()
+                     {
+                        $("#name").val('');
+                        $("#emailid").val('');
+                        $("#mobile").val('');
+                        $("#subject").val('');
+                        $("#message").val('');  
+                        $('#characterLeft').text('');
+                        $('#characterLeft').text('Mail Sent Successfully!!!');
+                        $('#characterLeft').addClass('animated'); 
+                        $('#characterLeft').addClass('flipInX');    
+                        $('#submit').addClass('disabled');
+                         // alert('Fetch Complete');
+                     },
+                     error: function()
+                     {
+                        $('#characterLeft').text('There was an error while sending your mail! Please retry.');
+                        $('#characterLeft').addClass('animated'); 
+                        $('#characterLeft').addClass('flipInX');    
+                     },
+                     complete: function()
+                     {
+                         // alert('Complete')
+                     }
+                 });
+                // }
+              // return false;
             });
 });

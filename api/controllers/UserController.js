@@ -63,7 +63,7 @@ module.exports = {
             },
         });
         sg.API(request, function (error, response) {
-            // console.log("response", response);
+            console.log("response", response);
             if (error) {
                 res.jsonx(error);
             } else {
